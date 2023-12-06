@@ -4,7 +4,7 @@ import java.util.stream.Collectors;
 public class Day1 extends Day {
 
     @Override
-    public long task1() {
+    public long task1(boolean isTest) {
         List<String> lines = puzzleInputStream().collect(Collectors.toList());
 
         int sum = 0;
@@ -38,7 +38,7 @@ public class Day1 extends Day {
     }
 
     @Override
-    public long task2() {
+    public long task2(boolean isTest) {
         List<String> lines = puzzleInputStream().collect(Collectors.toList());
 
         List<String> searchStrings = List.of(
