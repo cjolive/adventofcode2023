@@ -1,10 +1,14 @@
 plugins {
     id 'java'
-    id "com.diffplug.spotless" version "6.11.0"
+    id "com.diffplug.spotless" version "6.23.3"
 }
 
 group 'uk.co.cjolive'
 version '1.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+}
 
 repositories {
     mavenCentral()

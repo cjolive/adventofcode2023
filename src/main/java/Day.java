@@ -14,7 +14,7 @@ public abstract class Day {
 
     public abstract long task1(boolean isTest);
 
-    public abstract long task2(boolean istest);
+    public abstract long task2(boolean isTest);
 
     protected Map<Integer, String> puzzleInputAsMap() {
         Map<Integer, String> map = new HashMap<>();

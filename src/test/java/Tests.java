@@ -19,6 +19,12 @@ public class Tests {
     }
 
     @Test
+    public void testDay3() {
+        Day day = new Day3();
+        assertEquals(4361, day.task1(true));
+    }
+
+    @Test
     public void testDay4() {
         Day day = new Day4();
         assertEquals(20407, day.task1(false));
@@ -46,5 +52,14 @@ public class Tests {
         assertEquals(138915, day.task1(false));
         assertEquals(71503, day.task2(true));
         assertEquals(27340847, day.task2(false));
+    }
+
+    @Test
+    public void testDay7() {
+        Day day = new Day7();
+        assertEquals(6440, day.task1(true));
+        assertEquals(251545216, day.task1(false));
+        assertEquals(5905, day.task2(true));
+        assertEquals(250384185, day.task2(false)); // low
     }
 }
