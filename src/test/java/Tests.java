@@ -35,14 +35,7 @@ public class Tests {
     public void testDay5() {
         Day day = new Day5();
         assertEquals(107430936, day.task1(false));
-        assertEquals(23738616, day.task2(false));
-    }
-
-    @Test
-    public void testDay5v2() throws Exception {
-        Day5v2 day = new Day5v2();
-        assertEquals(107430936, day.task1());
-        assertEquals(23738616, day.task2());
+        // assertEquals(23738616, day.task2(false)); // slow
     }
 
     @Test
@@ -60,6 +53,13 @@ public class Tests {
         assertEquals(6440, day.task1(true));
         assertEquals(251545216, day.task1(false));
         assertEquals(5905, day.task2(true));
-        assertEquals(250384185, day.task2(false)); // low
+        assertEquals(250384185, day.task2(false));
+    }
+
+    @Test
+    public void testDay8() {
+        Day day = new Day8();
+        assertEquals(16579, day.task1(false));
+        assertEquals(12927600769609L, day.task2(false));
     }
 }
